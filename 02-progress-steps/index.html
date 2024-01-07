@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- The line above is the doctype declaration, it tells the browser that this is an HTML5 document -->
+
+<html lang="en">
+  <!-- This is the root element of the HTML document, and 'lang="en"' specifies that the content is in English -->
+
+  <head>
+    <!-- The head section contains meta-information about the document, like character encoding, viewport settings, linked CSS files, and the title -->
+
+    <meta charset="UTF-8" />
+    <!-- This specifies the character encoding for the HTML document (UTF-8, which includes most characters from all known languages) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This meta tag ensures the site is responsive, setting the width of the viewport to the device's width and the initial zoom level to 1 -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- This links an external CSS file (style.css) to define the styling of the page -->
+
+    <title>Progress Steps</title>
+    <!-- Sets the title of the document, which is shown in the browser's title bar or tab -->
+  </head>
+
+  <body>
+    <!-- The body tag contains the content of the HTML document that will be displayed in the web browser -->
+
+    <div class="container">
+      <!-- This div acts as a container for the entire content, likely for styling and layout purposes -->
+
+      <div class="progress-container">
+        <!-- A container for the progress steps, probably styled in CSS -->
+
+        <div class="progress" id="progress"></div>
+        <!-- A div to display the progress bar -->
+
+        <div class="circle active">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+        <!-- These divs represent individual steps in the progress bar, with numbers indicating the step sequence -->
+      </div>
+
+      <button class="btn" id="prev" disabled>Prev</button>
+      <!-- A button to move to the previous step, initially disabled -->
+
+      <button class="btn" id="next">Next</button>
+      <!-- A button to move to the next step -->
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Linking an external JavaScript file (script.js) to add interactivity to the webpage -->
+  </body>
+</html>
